@@ -1,3 +1,5 @@
-document.querySelector(".btn").addEventListener("click", function () {
-    alert("Welcome to KawaHub!\n\nThe future of African business starts here.");
-});
+document.querySelector(".btn").onclick=function(){
+
+alert("Welcome to KawaHub 🚀\n\nThe future of African business begins today!");
+
+}
