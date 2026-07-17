@@ -1,5 +1,21 @@
-document.querySelector(".btn").onclick = function(){
+document.addEventListener("DOMContentLoaded", () => {
 
-alert("🚀 Welcome to KawaHub!\n\nThe future of African business starts here.");
+    const buttons = document.querySelectorAll(".btn");
 
-}
+    buttons.forEach(button => {
+
+        button.addEventListener("mouseenter", () => {
+
+            button.style.transform = "translateY(-3px)";
+
+        });
+
+        button.addEventListener("mouseleave", () => {
+
+            button.style.transform = "translateY(0px)";
+
+        });
+
+    });
+
+});
