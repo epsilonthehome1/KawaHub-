@@ -306,3 +306,39 @@ footer{
 .product-grid .card p{
     margin:10px 0;
    }
+/* ===========================
+   Business Ideas
+=========================== */
+
+.guest-list{
+    list-style:none;
+    margin:25px 0;
+    padding:0;
+}
+
+.guest-list li{
+    margin:12px 0;
+    font-size:17px;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    text-align:left;
+    padding-bottom:20px;
+}
+
+.footer-content h3,
+.footer-content h4{
+    margin-bottom:15px;
+}
+
+.footer-content a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-content a:hover{
+    text-decoration:underline;
+}
