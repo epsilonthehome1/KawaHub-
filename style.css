@@ -220,3 +220,89 @@ footer{
 }
 
   }
+/* ===========================
+   Marketplace
+   =========================== */
+
+.market-search{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.market-search h2{
+    color:#0057d9;
+    margin-bottom:20px;
+}
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.search-box input{
+    width:450px;
+    max-width:90%;
+    padding:15px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.categories{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.categories h2{
+    color:#0057d9;
+    margin-bottom:30px;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+}
+
+.category-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+    font-size:30px;
+}
+
+.category-card h3{
+    margin-top:10px;
+    font-size:18px;
+    color:#333;
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+}
+
+.products{
+    padding:70px 8%;
+}
+
+.products h2{
+    text-align:center;
+    color:#0057d9;
+    margin-bottom:40px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.product-grid .card p{
+    margin:10px 0;
+   }
