@@ -1,21 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
+const menuToggle = document.getElementById("menu-toggle");
 
-    const buttons = document.querySelectorAll(".btn");
+const navLinks = document.getElementById("nav-links");
 
-    buttons.forEach(button => {
+if (menuToggle) {
 
-        button.addEventListener("mouseenter", () => {
+    menuToggle.addEventListener("click", () => {
 
-            button.style.transform = "translateY(-3px)";
-
-        });
-
-        button.addEventListener("mouseleave", () => {
-
-            button.style.transform = "translateY(0px)";
-
-        });
+        navLinks.classList.toggle("active");
 
     });
 
-});
+}
