@@ -367,3 +367,61 @@ footer{
 .footer-content a:hover{
     text-decoration:underline;
 }
+/* ===========================
+   Mobile Navigation
+=========================== */
+
+.menu-toggle{
+display:none;
+font-size:34px;
+color:white;
+cursor:pointer;
+}
+
+@media(max-width:900px){
+
+.navbar{
+flex-wrap:wrap;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+
+display:none;
+flex-direction:column;
+width:100%;
+background:#0057D9;
+margin-top:20px;
+padding:20px 0;
+gap:20px;
+
+}
+
+.nav-links.active{
+
+display:flex;
+
+}
+
+.logo-text p{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+   }
