@@ -1,36 +1,56 @@
-import { auth } from "./firebase.js";
+import { auth, db } from "./firebase.js";
 
 import {
   createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
 
+import {
+  doc,
+  setDoc
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
 const registerForm = document.getElementById("registerForm");
 
 registerForm.addEventListener("submit", async (e) => {
 
-    e.preventDefault();
+  e.preventDefault();
 
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
+  const firstName = document.getElementById("firstName").value;
+  const lastName = document.getElementById("lastName").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
 
-    if (password !== confirmPassword) {
-        alert("Passwords do not match!");
-        return;
-    }
+  if (password !== confirmPassword) {
+    alert("Passwords do not match.");
+    return;
+  }
 
-    try {
+  try {
 
-        await createUserWithEmailAndPassword(auth, email, password);
+    const userCredential = await createUserWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
 
-        alert("🎉 Welcome to KawaHub!");
+    const user = userCredential.user;
 
-        window.location.href = "dashboard.html";
+    await setDoc(doc(db, "users", user.uid), {
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      joinedAt: new Date().toISOString()
+    });
 
-    } catch (error) {
+    alert("🎉 Account created successfully!");
 
-        alert(error.message);
+    window.location.href = "dashboard.html";
 
-    }
+  } catch (error) {
+
+    alert(error.message);
+
+  }
 
 });
