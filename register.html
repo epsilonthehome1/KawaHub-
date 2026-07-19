@@ -1,34 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - KawaHub</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Account | KawaHub</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
 <div class="form-container">
 
-    <h1>Create Your KawaHub Account</h1>
+<h1>Create Your KawaHub Account</h1>
 
-    <form id="registerForm">
+<p>Join Africa's Digital Business Ecosystem.</p>
 
-        <input type="text" placeholder="First Name" required>
+<form id="registerForm">
 
-        <input type="text" placeholder="Last Name" required>
+<input
+type="text"
+id="firstName"
+name="firstName"
+placeholder="First Name"
+required>
 
-        <input type="email" placeholder="Email Address" required>
+<input
+type="text"
+id="lastName"
+name="lastName"
+placeholder="Last Name"
+required>
 
-        <input type="password" placeholder="Password" required>
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Email Address"
+required>
 
-        <button class="btn">Create Account</button>
+<input
+type="password"
+id="password"
+name="password"
+placeholder="Password"
+required>
 
-    </form>
+<input
+type="password"
+id="confirmPassword"
+name="confirmPassword"
+placeholder="Confirm Password"
+required>
+
+<button
+type="submit"
+class="btn">
+
+Create Account
+
+</button>
+
+</form>
+
+<p>
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</p>
 
 </div>
 
-<script src="script.js"></script>
+<script type="module" src="register.js"></script>
 
 </body>
-</html>
+    </html>
