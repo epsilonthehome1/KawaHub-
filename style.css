@@ -508,3 +508,86 @@ color:#444;
 font-weight:600;
 
    }
+/* ===========================
+   Featured Businesses
+=========================== */
+
+.featured-businesses{
+
+padding:80px 8%;
+
+background:#f7f9fb;
+
+text-align:center;
+
+}
+
+.section-subtitle{
+
+font-size:18px;
+
+color:#666;
+
+margin-bottom:45px;
+
+}
+
+.business-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.business-card{
+
+background:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+padding-bottom:25px;
+
+}
+
+.business-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.business-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.business-card h3{
+
+margin:20px 0 10px;
+
+font-size:24px;
+
+color:#0057D9;
+
+}
+
+.business-card p{
+
+margin-bottom:20px;
+
+color:#666;
+
+   }
