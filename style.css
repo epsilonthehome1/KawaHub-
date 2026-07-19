@@ -591,3 +591,66 @@ margin-bottom:20px;
 color:#666;
 
    }
+/* ===========================
+   Trending Business Ideas
+=========================== */
+
+.trending-ideas{
+
+padding:80px 8%;
+
+background:white;
+
+text-align:center;
+
+}
+
+.ideas-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.idea-card{
+
+background:#F7F9FB;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.idea-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.idea-card h3{
+
+color:#0057D9;
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.idea-card p{
+
+margin-bottom:25px;
+
+color:#555;
+
+line-height:1.6;
+
+}
