@@ -774,3 +774,116 @@ gap:20px;
 flex-wrap:wrap;
 
 }
+/* ===========================
+   Dashboard
+=========================== */
+
+.dashboard{
+
+display:flex;
+
+min-height:100vh;
+
+}
+
+.sidebar{
+
+width:260px;
+
+background:#0057D9;
+
+color:white;
+
+padding:30px;
+
+}
+
+.sidebar-logo{
+
+margin-bottom:50px;
+
+}
+
+.sidebar ul{
+
+list-style:none;
+
+}
+
+.sidebar li{
+
+margin:20px 0;
+
+}
+
+.sidebar a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:17px;
+
+}
+
+.dashboard-content{
+
+flex:1;
+
+padding:50px;
+
+background:#F7F9FB;
+
+}
+
+.dashboard-content h1{
+
+color:#0057D9;
+
+margin-bottom:10px;
+
+}
+
+.dashboard-cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin:40px 0;
+
+}
+
+.dash-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+text-align:center;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.dash-card h2{
+
+font-size:42px;
+
+color:#2ECC71;
+
+margin-bottom:10px;
+
+}
+
+.quick-actions button{
+
+margin-right:15px;
+
+margin-top:20px;
+
+}
