@@ -725,3 +725,52 @@ color:#777;
 font-size:14px;
 
    }
+/* ===========================
+   Join KawaHub
+=========================== */
+
+.join-kawahub{
+
+padding:90px 8%;
+
+background:#0057D9;
+
+text-align:center;
+
+color:white;
+
+}
+
+.join-kawahub h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.join-kawahub p{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:20px;
+
+line-height:1.7;
+
+margin-bottom:40px;
+
+}
+
+.join-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
