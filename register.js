@@ -1,0 +1,36 @@
+import { auth } from "./firebase.js";
+
+import {
+  createUserWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+const registerForm = document.getElementById("registerForm");
+
+registerForm.addEventListener("submit", async (e) => {
+
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+    }
+
+    try {
+
+        await createUserWithEmailAndPassword(auth, email, password);
+
+        alert("🎉 Welcome to KawaHub!");
+
+        window.location.href = "index.html";
+
+    } catch (error) {
+
+        alert(error.message);
+
+    }
+
+});
