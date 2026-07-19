@@ -25,7 +25,7 @@ registerForm.addEventListener("submit", async (e) => {
 
         alert("🎉 Welcome to KawaHub!");
 
-        window.location.href = "index.html";
+        window.location.href = "dashboard.html";
 
     } catch (error) {
 
