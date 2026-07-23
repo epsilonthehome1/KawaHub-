@@ -37,11 +37,15 @@ registerForm.addEventListener("submit", async (e) => {
     const user = userCredential.user;
 
     await setDoc(doc(db, "users", user.uid), {
-      firstName: firstName,
-      lastName: lastName,
-      email: email,
-      joinedAt: new Date().toISOString()
-    });
+  firstName,
+  lastName,
+  email,
+  country: "Malawi",
+  businessName: "",
+  bio: "",
+  profileImage: "",
+  joinedAt: new Date().toISOString()
+});
 
     alert("🎉 Account created successfully!");
 
