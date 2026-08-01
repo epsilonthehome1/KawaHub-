@@ -52,9 +52,7 @@ registerForm.addEventListener("submit", async (e) => {
     });
 
     console.log("Profile saved to Firestore!");
-
-    alert("🎉 Account created successfully!");
-
+alert("🚀 NEW VERSION OF REGISTER.JS IS RUNNING!");
     window.location.href = "dashboard.html";
 
   } catch (error) {
