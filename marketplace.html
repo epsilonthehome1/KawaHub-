@@ -27,24 +27,30 @@ KawaHub
 
 <ul class="nav-links">
 
-<li><a href="index.html">Home</a></li>
-
-<li><a href="marketplace.html">Marketplace</a></li>
-
-<li><a href="ideas.html">Business Ideas</a></li>
-
-<li><a href="about.html">About</a></li>
-
-<li><a href="login.html">Login</a></li>
+<li>
+<a href="index.html">Home</a>
+</li>
 
 <li>
+<a href="marketplace.html">Marketplace</a>
+</li>
 
+<li>
+<a href="ideas.html">Business Ideas</a>
+</li>
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+<li>
+<a href="login.html">Login</a>
+</li>
+
+<li>
 <a class="register-btn" href="register.html">
-
 Create Account
-
 </a>
-
 </li>
 
 </ul>
@@ -53,14 +59,13 @@ Create Account
 
 </header>
 
+
 <!-- Marketplace Hero -->
 
 <section class="hero">
 
 <h1>
-
 🛒 KawaHub Marketplace
-
 </h1>
 
 <p>
@@ -73,23 +78,25 @@ Browse freely as a guest and create a free account when you're ready to buy, sel
 
 </section>
 
+
 <!-- Search -->
 
 <section class="market-search">
 
 <h2>
-
 Find Products
-
 </h2>
 
 <div class="search-box">
 
 <input
 type="text"
+id="searchInput"
 placeholder="Search products, businesses or services...">
 
-<button class="btn">
+<button
+class="btn"
+id="searchButton">
 
 Search
 
@@ -99,14 +106,13 @@ Search
 
 </section>
 
+
 <!-- Categories -->
 
 <section class="categories">
 
 <h2>
-
 Browse Categories
-
 </h2>
 
 <div class="category-grid">
@@ -163,136 +169,35 @@ Browse Categories
 
 </section>
 
-<!-- Featured Products -->
+
+<!-- Dynamic Products -->
 
 <section class="products">
 
 <h2>
-
-Featured Products
-
+Latest Products
 </h2>
 
-<div class="product-grid">
-  <div class="card">
+<div
+id="productsContainer"
+class="product-grid">
 
-<h3>💻 HP Laptop</h3>
-
-<p><strong>Price:</strong> MWK 850,000</p>
-
-<p><strong>Location:</strong> Lilongwe</p>
-
-<p>⭐⭐⭐⭐☆</p>
-
-<button class="btn">View Details</button>
-
-</div>
-
-<div class="card">
-
-<h3>📱 Samsung Galaxy A56</h3>
-
-<p><strong>Price:</strong> MWK 620,000</p>
-
-<p><strong>Location:</strong> Blantyre</p>
-
-<p>⭐⭐⭐⭐⭐</p>
-
-<button class="btn">View Details</button>
-
-</div>
-
-<div class="card">
-
-<h3>🌽 50kg Maize</h3>
-
-<p><strong>Price:</strong> MWK 48,000</p>
-
-<p><strong>Location:</strong> Mzuzu</p>
-
-<p>⭐⭐⭐⭐☆</p>
-
-<button class="btn">View Details</button>
-
-</div>
-
-<div class="card">
-
-<h3>🐔 Broiler Chickens</h3>
-
-<p><strong>Price:</strong> MWK 12,000</p>
-
-<p><strong>Location:</strong> Zomba</p>
-
-<p>⭐⭐⭐⭐⭐</p>
-
-<button class="btn">View Details</button>
-
-</div>
-
-<div class="card">
-
-<h3>☀️ Solar Panel Kit</h3>
-
-<p><strong>Price:</strong> MWK 1,250,000</p>
-
-<p><strong>Location:</strong> Lilongwe</p>
-
-<p>⭐⭐⭐⭐☆</p>
-
-<button class="btn">View Details</button>
-
-</div>
-
-<div class="card">
-
-<h3>👗 African Print Dress</h3>
-
-<p><strong>Price:</strong> MWK 35,000</p>
-
-<p><strong>Location:</strong> Blantyre</p>
-
-<p>⭐⭐⭐⭐☆</p>
-
-<button class="btn">View Details</button>
-
-</div>
-
-<div class="card">
-
-<h3>🪑 Office Desk</h3>
-
-<p><strong>Price:</strong> MWK 180,000</p>
-
-<p><strong>Location:</strong> Lilongwe</p>
-
-<p>⭐⭐⭐⭐⭐</p>
-
-<button class="btn">View Details</button>
-
-</div>
-
-<div class="card">
-
-<h3>🚲 Mountain Bicycle</h3>
-
-<p><strong>Price:</strong> MWK 275,000</p>
-
-<p><strong>Location:</strong> Mzuzu</p>
-
-<p>⭐⭐⭐⭐☆</p>
-
-<button class="btn">View Details</button>
-
-</div>
+<p>
+Loading products...
+</p>
 
 </div>
 
 </section>
 
+
+<!-- Guest Banner -->
+
 <section class="guest-banner">
 
-<h2>🌍 Exploring as a Guest</h2>
+<h2>
+🌍 Exploring as a Guest
+</h2>
 
 <p>
 
@@ -304,14 +209,20 @@ To contact sellers, save products, post your own products, or access exclusive f
 
 <br>
 
-<button class="btn" onclick="location.href='register.html'">
+<button
+class="btn"
+onclick="location.href='register.html'">
 
 Create Free Account
 
 </button>
 
-                                          </section>
-                                          <footer>
+</section>
+
+
+<!-- Footer -->
+
+<footer>
 
 <p>
 
@@ -323,8 +234,20 @@ Connecting Ideas. Creating Success.
 
 </footer>
 
+
+<!-- Main JavaScript -->
+
 <script src="script.js"></script>
+
+
+<!-- Firebase Marketplace JavaScript -->
+
+<script
+type="module"
+src="marketplace.js">
+</script>
+
 
 </body>
 
-</html>
+  </html>
