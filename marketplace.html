@@ -9,7 +9,9 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+rel="stylesheet">
 
 </head>
 
@@ -20,9 +22,7 @@
 <nav class="navbar">
 
 <div class="logo">
-
 KawaHub
-
 </div>
 
 <ul class="nav-links">
@@ -75,6 +75,139 @@ Discover products and services from entrepreneurs across Africa.
 Browse freely as a guest and create a free account when you're ready to buy, sell or connect.
 
 </p>
+
+</section>
+
+
+<!-- SELL / POST PRODUCT -->
+
+<section class="sell-section">
+
+<h2>
+🚀 Sell on KawaHub
+</h2>
+
+<p>
+Have something to sell? Post your product directly on the KawaHub Marketplace.
+</p>
+
+<button
+class="btn"
+id="sellProductButton"
+type="button">
+
+➕ Sell / Post a Product
+
+</button>
+
+</section>
+
+
+<!-- Product Form -->
+
+<section
+class="product-form-section"
+id="productFormSection"
+style="display: none;">
+
+<div class="form-container">
+
+<h2>
+📦 Post Your Product
+</h2>
+
+<p>
+Add your product details below.
+</p>
+
+<form id="marketplaceProductForm">
+
+<input
+type="text"
+id="marketProductName"
+placeholder="Product Name"
+required>
+
+<input
+type="number"
+id="marketProductPrice"
+placeholder="Price in MWK"
+min="0"
+required>
+
+<select
+id="marketProductCategory"
+required>
+
+<option value="">
+Select Category
+</option>
+
+<option value="Agriculture">
+🌾 Agriculture
+</option>
+
+<option value="Electronics">
+💻 Electronics
+</option>
+
+<option value="Fashion">
+👕 Fashion
+</option>
+
+<option value="Food">
+🍔 Food
+</option>
+
+<option value="Education">
+📚 Education
+</option>
+
+<option value="Services">
+🛠️ Services
+</option>
+
+<option value="Other">
+📦 Other
+</option>
+
+</select>
+
+<textarea
+id="marketProductDescription"
+placeholder="Describe your product..."
+rows="6"
+required></textarea>
+
+<input
+type="file"
+id="marketProductImage"
+accept="image/*">
+
+<div>
+
+<button
+class="btn"
+type="submit">
+
+🚀 Post Product
+
+</button>
+
+<button
+class="btn"
+id="cancelProductButton"
+type="button">
+
+Cancel
+
+</button>
+
+</div>
+
+</form>
+
+</div>
 
 </section>
 
